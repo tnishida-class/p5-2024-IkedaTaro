@@ -1,7 +1,7 @@
 // チェッカー
 function setup() {
   createCanvas(200, 200);
-  background(255);
+  background(255);  
 
   let size = width / 8; //widthはキャンバスの幅　つまり200
   noStroke();
