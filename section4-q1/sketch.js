@@ -20,5 +20,11 @@ function setup(){
   let px, py; // 線を引くために一つ前の点を覚えておく変数
   for(let i = 0; i < scores.length; i++){
     // BLANK[1]
+    //点を描く
+    ellipse(i * dx + 2, height - height * scores[i] / 100, 10);
+    //線を引く
+    px = i * dx + 2;
+    py = height- height * scores[i] /100; 
+    line(px, py, (i+1) * dx + 2, height - height * scores[i+1] / 100);
   }
 }
