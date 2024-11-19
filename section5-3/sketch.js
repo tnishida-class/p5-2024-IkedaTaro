@@ -2,6 +2,7 @@
 function setup(){
   createCanvas(200, 200);
   calendar(2019, 10);
+    y=2024
 
   // isLeapYear の動作確認のため console に出力しています
   for(let i = 2000; i <= 2100; i++){
@@ -26,7 +27,11 @@ function isLeapYear(y){
 }
 
 function daysInYear(y){
-  // BLANK[1]
+  if (isLeapYear(y)) {
+    return 366; // うるう年は366日
+  } else {
+    return 365; // 通常年は365日
+  }
 }
 
 function daysInMonth(y, m){

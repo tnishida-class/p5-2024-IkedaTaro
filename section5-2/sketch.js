@@ -41,7 +41,7 @@ function regularPolygon(n, cx, cy, r){
   beginShape();
   for(var i = 0; i < n; i++){
   let theta;
-    theta = TWO_PI * i * 1 / n - HALF_PI;
+    theta = TWO_PI * i * 1 / n;
     let x = cx + cos(theta) * r;
     let y = cy + sin(theta) * r;
     vertex(x,y);
