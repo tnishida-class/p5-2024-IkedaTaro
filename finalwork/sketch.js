@@ -1,11 +1,6 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   word = spawnWord();  // 最初の風船の単語をspawnword関数で選んでwordに代入
-
-  balls = [];  // 複数の玉（風船）を格納する配列
-  addBall();   // 最初の玉を追加
-
-  // 初期設定の必要はないため、ボールの動きの設定を各玉のオブジェクト内に含める
 }
 
 function windowResized() {
@@ -76,7 +71,7 @@ function keyTyped() {
   if (typedwords === word) {
     word = spawnWord(); // 新しい単語を表示
     typedwords = ""; // 文字列をリセット
-    count += 1;
+    count += 1;　// いいね！の数を増やす
     addBall(); // 新しい玉を追加
   }
 }
